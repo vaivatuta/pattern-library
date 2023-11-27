@@ -7,7 +7,7 @@ import HeroPost from "./hero-post";
 import MoreStories from "./more-stories";
 
 export default function Landing({ allPosts, preview }) {
-  const [heroPost, ...morePosts] = allPosts || [];
+  const [...morePosts] = allPosts || [];
   return (
     <>
       <Layout preview={preview}>
