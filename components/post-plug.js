@@ -26,7 +26,7 @@ export default function PostPlug({
       <div className="mb-4 text-lg">
         <Date dateString={date} />
       </div>
-      <div className="mb-4 text-lg leading-relaxed flex flex-col gap-4">
+      <div className="mb-4 text-lg leading-relaxed flex flex-col gap-2">
         {excerpt ? (
           excerpt
         ) : (
