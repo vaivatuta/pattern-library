@@ -8,9 +8,9 @@ import Head from "next/head";
 import PostHeader from "./post-header";
 import PostTitle from "./post-title";
 import ComponentBody from "./component-body"; // Create this component
-// import SectionSeparator from "./section-separator";
-// import MoreComponents from "./more-components"; // Create this component
+import SectionSeparator from "./section-separator";
 import { useRouter } from "next/router";
+import MoreStories from "./more-stories";
 
 export default function Component({ data = {}, preview = false }) {
   const { component, moreComponents } = data;
@@ -37,10 +37,10 @@ export default function Component({ data = {}, preview = false }) {
               <ComponentBody content={component.description} />
               <ComponentBody content={component.code} code />
             </article>
-            {/* <SectionSeparator />
+            <SectionSeparator />
             {moreComponents.length > 0 && (
-              <MoreComponents components={moreComponents} />
-            )} */}
+              <MoreStories posts={moreComponents} />
+            )}
           </>
         )}
       </Container>
