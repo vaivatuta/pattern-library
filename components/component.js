@@ -34,7 +34,8 @@ export default function Component({ data = {}, preview = false }) {
                 {/* Add any meta tags specific to components here */}
               </Head>
               <PostHeader title={component.title} />
-              <ComponentBody content={component.code} />
+              <ComponentBody content={component.description} />
+              <ComponentBody content={component.code} code />
             </article>
             {/* <SectionSeparator />
             {moreComponents.length > 0 && (
