@@ -24,19 +24,21 @@ export default function ComponentBody({ content, code }) {
   };
 
   return (
-    <div className={`max-w-2xl mx-auto flex flex-col gap-8`}>
+    <div className={`max-w-2xl mx-auto`}>
       {code ? (
-        <>
+        <div className="flex flex-col gap-4">
           <Button text="Copy" onClick={handleCopyClick} />
           <SyntaxHighlighter language="jsx" style={coy}>
             {content.code}
           </SyntaxHighlighter>
-        </>
+        </div>
       ) : (
-        <>
-          <p>{content}</p>
-          <SectionSeparator mini />
-        </>
+        content && (
+          <>
+            <p>{content}</p>
+            <SectionSeparator mini />
+          </>
+        )
       )}
     </div>
   );
