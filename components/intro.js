@@ -6,7 +6,7 @@ export default function Intro() {
       <h1 className="text-6xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
         Vaiva's Pattern Library.
       </h1>
-      <p className="text-center md:text-left text-lg mt-5 md:pl-8 max-w-xl">
+      {/* <p className="text-center md:text-left text-lg mt-5 md:pl-8 max-w-xl">
         A statically generated pattern library using{" "}
         <a
           href="https://nextjs.org/"
@@ -23,7 +23,7 @@ export default function Intro() {
         </a>
         . Ever-changing and ever-growing so long as our brave and fearless lead
         dev, Doug, keeps demanding I work on it.
-      </p>
+      </p> */}
     </section>
   );
 }
